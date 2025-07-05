@@ -34,42 +34,55 @@
     
   </style>
 </head>
-<body>
+<body class="bg-gray-200 min-h-screen flex flex-col items-center justify-center font-[family-name:var(--ff-body)] text-[var(--clr-grey-500)] text-[length:var(--fs-body)]">
   <main>
-    <section>
-      <div>
-        <h1>Reliable, efficient delivery</h1>
-        <p>Powered by Technology</p>
-        
-        <p>
+    <section class="flex flex-col px-8 py-12 gap-12 items-center max-w-screen-lg">
+      <div class="flex flex-col items-center gap-6 max-w-lg">
+        <div class="flex flex-col items-center">
+          <h1 class="text-[clamp(1.5rem,5vw,2rem)] font-[var(--fw-light)] text-center">Reliable, efficient delivery</h1>
+          <p class="text-[clamp(1.5rem,5vw,2rem)] font-[var(--fw-bold)] text-center">Powered by Technology</p>
+        </div>
+        <p class="text-center">
           Our Artificial Intelligence powered tools use millions of project data points 
           to ensure that your project is successful
         </p>
       </div>     
-      <div>
-        <div>
-          <h3>Supervisor</h3>
-          <p>Monitors activity to identify project roadblocks</p>
+      <div class="grid gap-8 xs:grid-cols-3 xs:grid-rows-4">
+        <div class="sm:col-start-1 sm:row-start-2 sm:row-span-2 bg-[var(--clr-white)] rounded-md bt-red-500 border-t-4 border-[var(--clr-cyan)] flex flex-col items-left p-8 justify-between gap-8 shadow-[0px_12px_6px_0px_rgba(0,_0,_0,_0.05)]">
+          <div class="flex flex-col gap-2">
+            <h3 class="font-[var(--fw-bold)] text-2xl">Supervisor</h3>
+            <p>Monitors activity to identify project roadblocks</p>          
+          </div>
+          <img class="self-end" src="./images/icon-supervisor.svg" alt="">
         </div>
-        <div>
-          <h3>Team Builder</h3>
-          <p>Scans our talent network to create the optimal team for your project</p>
+        <div class="sm:col-start-2 sm:row-start-1 sm:row-span-2 bg-[var(--clr-white)] rounded-md bt-red-500 border-t-4 border-[var(--clr-red)] flex flex-col items-left p-8 justify-between gap-8 shadow-[0px_12px_6px_0px_rgba(0,_0,_0,_0.05)]">
+          <div class="flex flex-col gap-2">
+            <h3 class="font-[var(--fw-bold)] text-2xl">Team Builder</h3>
+            <p>Scans our talent network to create the optimal team for your project</p>
+          </div>
+          <img class="self-end" src="./images/icon-team-builder.svg" alt="">
         </div>
-        <div>
-          <h3>Karma</h3>
-          <p>Regularly evaluates our talent to ensure quality</p>
+        <div class="sm:col-start-2 sm:row-start-3 sm:row-span-2 bg-[var(--clr-white)] rounded-md bt-red-500 border-t-4 border-[var(--clr-orange)] flex flex-col items-left p-8 justify-between gap-8 shadow-[0px_12px_6px_0px_rgba(0,_0,_0,_0.05)]">
+          <div class="flex flex-col gap-2">
+            <h3 class="font-[var(--fw-bold)] text-2xl">Karma</h3>
+            <p>Regularly evaluates our talent to ensure quality</p>
+          </div>
+          <img class="self-end" src="./images/icon-karma.svg" alt="">
         </div>
-        <div>
-          <h3>Calculator</h3>
-          <p>Uses data from past projects to provide better delivery estimates</p>
+        <div class="sm:col-start-3 sm:row-start-2 sm:row-span-2 bg-[var(--clr-white)] rounded-md bt-red-500 border-t-4 border-[var(--clr-blue)] flex flex-col items-left p-8 justify-between gap-8 shadow-[0px_12px_6px_0px_rgba(0,_0,_0,_0.05)]">
+          <div class="flex flex-col gap-2">
+            <h3 class="font-[var(--fw-bold)] text-2xl">Calculator</h3>
+            <p>Uses data from past projects to provide better delivery estimates</p>
+          </div>
+          <img  class="self-end" src="./images/icon-calculator.svg" alt="">
         </div>
       </div>
     </section>    
   </main>
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Mubarakik</a>.
+  <footer >
+    <p class="text-center text-xs mt-3 mb-6">
+      Challenge by <a class="underline text-blue-500 hover:no-underline" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a class="underline text-blue-500 hover:no-underline" href="#">Mubarakik</a>.
     </p>
   </footer>
 </body>
